@@ -60,9 +60,11 @@
             .footer a { font-weight: bold;}
         </style>
 
-
+        
 
         <div class="container">
+
+
             <div class="inner">
                 
                 
@@ -135,12 +137,18 @@
 
             <style>
                 .note { background-color: rgba(0, 0, 0, 0.043); padding: 15px;  box-sizing: content-box;}
-                .inner.whatnext { display: grid; grid-template-columns: 32% 32% 32%; margin-top: 50px; padding: 0; }
-                .whatnext a {  text-decoration: none; padding: 30px; }
+
+                @media only screen and (min-width: 600px) {
+                    .whatnext { display: grid; grid-template-columns: 32% 32% 32%; }
+                    .whatnext a { margin-bottom: 50px; display: block; }
+                }
+                .whatnext { margin-top: 50px; padding: 0; }
+                .whatnext a { text-decoration: none; padding: 30px; }
                 .whatnext a:hover { background: rgba(0, 0, 0, 0.043); }
                 .whatnext .action { font-size: 18px; font-weight: bold;}
+                .whatnext h2 { margin-top: 0; }
             </style>
-            <div class="container" style="margin-bottom: 400px">
+            <div class="container" style="margin-bottom: 200px">
                 <div class="inner note">
                     <span style="font-size: 32px; max-width: none;">This framework is designed to help organisations think about effective and supportive ways of working with freelancers: behaviours which both help the employer get the best work from the freelancer AND support the freelancer to do their best work and be mentally healthy.</span>
                     <!--<p><a href="about">Learn more about the framework</a></p>-->
@@ -172,6 +180,36 @@
             </div>
 
             
+        </div>
+
+
+        <div class="section inner" id="podcast">
+            <h2 style="font-size: 42px;">Learn from others</h2>
+            <p style="max-width: 600px;">We're chatting to businesses who have built an effective and progressive workforce with freelancers, or support and enable independent workers to do their best work. Listen along to learn.</p>
+
+            <style>
+
+                @media only screen and (min-width: 600px) {
+                    .episodes { display: flex; gap: 15px; max-width: 400px; }
+                }
+                .episodes { width: 100%;  }
+                .episodes a{ text-decoration: none; }
+                .episodes a:hover { text-decoration: underline; }
+                
+                .episodes img { width: 100%; }
+                .episodes .title { font-size: 24px; font-weight: bold; }
+            </style>
+            <div class="episodes">
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/0Iz2LuIjdUhnuNwkwTRV6X?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/3zWcTYwFdcOpXJzJrPDCb8?utm_source=generator&theme=1" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                <div style="border-radius:12px; background-color: grey; color:white; min-width: 400px; padding: 15px; box-sizing: border-box;" width="100%" height="352" frameBorder="0" allowfullscreen="">
+                
+                    <h3>Do you want to share your insights?</h3>
+                    <p>We speak to organisations who are working hard to work well with freelancers, so we can learn from each other.</p>
+                    <p><a href="mailto:podcast@the.independency.co" style="color:white; font-weight: bold;">Join us on the podcast</a></p>
+
+                </div>
+            </div>
         </div>
 
 
