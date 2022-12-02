@@ -43,21 +43,26 @@
 
 
         <style>
-            body { background: white; font-size: 18px; color: black; font-family: sans-serif;}
+            body { background: white; font-size: 18px; color: black; font-family: sans-serif; margin: 30px;}
             a { color: black; }
             h1 { margin-top: 300px; }
             .inner { max-width: 1100px; width: 100%; margin: 0 auto; }
             .highlight { background-color: white; }
             .principles { margin-top: 100px; }
             .principles p { max-width: 600px; }
-            .principle { margin-bottom: 150px;  display: grid; grid-template-columns: 150px auto; }
+            .principle { margin-bottom: 150px; }
             .principle img { width: 100px; display: block; }
             .principle h2 { margin-top: 15px; max-width: 600px; font-family: sans-serif;}
             
-            .logos { display: flex;  }
+            .logos { display: flex; }
             .footer { margin-top: 300px; margin-bottom: 100px; font-size: 14px;}
             .footer img { display: block; width: 60px; }
             .footer a { font-weight: bold;}
+
+            @media only screen and (min-width: 600px) {
+                .principle { display: grid; grid-template-columns: 150px auto }
+            }
+
         </style>
 
         
@@ -136,17 +141,17 @@
             
 
             <style>
-                .note { background-color: rgba(0, 0, 0, 0.043); padding: 15px;  box-sizing: content-box;}
-
+                .note { background-color: rgba(0, 0, 0, 0.043); padding: 15px;  box-sizing: border-box;}
+                
                 @media only screen and (min-width: 600px) {
                     .whatnext { display: grid; grid-template-columns: 32% 32% 32%; }
-                    .whatnext a { margin-bottom: 50px; display: block; }
+                    .whatnext a { margin-bottom: 50px; }
                 }
                 .whatnext { margin-top: 50px; padding: 0; }
-                .whatnext a { text-decoration: none; padding: 30px; }
+                .whatnext a { text-decoration: none; padding: 30px; display:block }
                 .whatnext a:hover { background: rgba(0, 0, 0, 0.043); }
                 .whatnext .action { font-size: 18px; font-weight: bold;}
-                .whatnext h2 { margin-top: 0; }
+                .whatnext h2 { margin-top: 0; display:inline-block; }
             </style>
             <div class="container" style="margin-bottom: 200px">
                 <div class="inner note">
@@ -155,6 +160,7 @@
                 </div>
                 <div class="inner whatnext">
 
+                   
                     <a href="mailto:freelancefriendly@the.independency.co">
                         <h2>Are you<br/> Freelance Friendly?</h2>
                         <div class="action">Show your support</div>
